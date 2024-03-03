@@ -1,1 +1,107 @@
-souvik is  GOOD BOY
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			*{
+				padding: 0;
+				margin:auto ;
+			}
+			body{
+				background-image: transparent;
+			}	
+			div.form{
+				width: 280px;
+				padding: 20px;
+				margin: auto;
+ 				background-color : black;
+				border-style: solid;
+				border-width: 10px;
+				border-color: #626262;
+				border-radius: 40px;
+				box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+				text-align: center;
+				position: relative;
+				top: 60px; 
+			}
+			div.form form input[type="text"]{
+				width: 95%;
+				padding: 10% 3%;
+				background-color: black;
+				border: none;
+				outline: none;
+				text-align: right;
+				color: white;
+				font-size: 3em;
+			}
+			div.form form input[type="button"]{
+				width: 65px;
+				height: 65px;
+				font-size: 1.5 em;
+				border-radius: 50%;
+				margin-bottom: 10px;
+			}
+			div.form form input[type="button"].ac{
+				width: 202px;
+				border-style: solid;
+				border-width: 2px;
+				border-color: white;
+				border-top-right-radius: 25px;
+				border-top-left-radius: 25px;
+				border-bottom-right-radius: 25px;
+				border-bottom-left-radius: 25px;
+				background-color: gray; 
+			}
+			div.form form input[type="button"].z{
+				width: 130px;
+				border-top-right-radius: 25px;
+				border-top-left-radius: 25px;
+				border-bottom-right-radius: 25px;
+				border-bottom-left-radius: 25px;
+				
+			}
+			.or{
+				background-color: orange;
+				border-style: solid;
+				border-width: 2px;
+				border-color: #626262;
+				color: white;
+			}
+			.n{
+				background-color: #333333;
+				border-style: solid;
+				border-width: 2px;
+				border-color: #626262;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="form">
+			<form name="mf">
+				<input type ="text" name="result">
+				<input type ="button" value="AC" class="ac" onclick="clearDisplay()">
+				<input type ="button" value="/" class="or" onclick="mf.result.value+= '/'">
+				<input type ="button" value="7" class="n" onclick="mf.result.value+= '7'">
+				<input type ="button" value="8" class="n" onclick="mf.result.value+= '8'">
+				<input type ="button" value="9" class="n" onclick="mf.result.value+= '9'"> 
+				<input type ="button" value="*" class="or" onclick="mf.result.value+= '*'">
+				<input type ="button" value="4" class="n" onclick="mf.result.value+= '4'">
+				<input type ="button" value="5" class="n" onclick="mf.result.value+= '5'">
+				<input type ="button" value="6" class="n" onclick="mf.result.value+= '6'">
+				<input type ="button" value="-" class="or" onclick="mf.result.value+= '-'">
+				<input type ="button" value="1" class="n" onclick="mf.result.value+= '1'">
+				<input type ="button" value="2" class="n" onclick="mf.result.value+= '2'">
+				<input type ="button" value="3" class="n" onclick="mf.result.value+= '3'">
+				<input type ="button" value="+" class="or" onclick="mf.result.value+= '+'">
+				<input type ="button" value="0" class="n z" onclick="mf.result.value+= '0'">
+				<input type ="button" value="." class="n" onclick="mf.result.value+= '.'">
+				<input type ="button" value="=" class="or" onclick="mf.result.value = eval(mf.result.value)">
+
+			</form>
+		</div>
+	 <script>
+        function clearDisplay() {
+            document.getElementById("ac").value = ""
+        }
+	</script>
+</html>
