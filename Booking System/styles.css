@@ -1,0 +1,59 @@
+body {
+ font-family: Arial, sans-serif;
+ background-color: #b3f0e8;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+form {
+    margin-bottom: 20px;
+}
+input, button {
+    padding: 10px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+#taskList {
+    margin-bottom: 20px;
+}
+.task {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+#filterButtons button {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: 0.9s ease;
+}
+#filterButtons button:hover {
+    background-color: #0056b3;
+    border-radius: 10px;
+    transition: 0.9s ease;
+}
+button[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.9s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: darkgreen;
+    border-radius: 10px;
+    transition: 0.9s ease;
+  }
